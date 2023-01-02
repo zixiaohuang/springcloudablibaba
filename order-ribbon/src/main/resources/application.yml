@@ -1,0 +1,22 @@
+server:
+  port: 8060
+  # 应用名称 （nacos会将该名称当做服务名称）
+spring:
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      server-addr: 8.134.165.135:8847
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
+stock-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.hw.ribbon.rule.CustomRule
+ribbon:
+  eager-load:
+    # 开启ribbon饥饿加载
+    enabled: true
+    # 配置使用ribbon饥饿加载，多个使用逗号分割
+    clients: stock-service

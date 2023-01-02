@@ -1,9 +1,9 @@
 server:
-  port: 8031
+  port: 8023
   # 应用名称 （nacos会将该名称当做服务名称）
 spring:
   application:
-    name: stock-service
+    name: product-service
   cloud:
     nacos:
       server-addr: 8.134.165.135:8847

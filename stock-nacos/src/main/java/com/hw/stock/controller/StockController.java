@@ -16,4 +16,11 @@ public class StockController {
         System.out.println("扣减库存");
         return "扣减库存" + port;
     }
+
+    @RequestMapping("/reduct2")
+    public String reduct2() {
+        int a = 1/0;
+        System.out.println("扣减库存");
+        return "扣减库存" + port;
+    }
 }

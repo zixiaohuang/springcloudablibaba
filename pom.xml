@@ -6,7 +6,15 @@
         <module>order</module>
         <module>stock</module>
         <module>order-nacos</module>
+        <module>order-ribbon</module>
         <module>stock-nacos</module>
+        <module>order-openfeign</module>
+        <module>product-nacos</module>
+        <module>config-nacos</module>
+        <module>sentinel_demo</module>
+        <module>order-sentinel</module>
+        <module>order-openfeign-sentinel</module>
+        <module>gateway</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
